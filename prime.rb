@@ -11,7 +11,7 @@ def sieve(max)
   counter = 0
   primes.each do |p|
     # Skip if nil
-    next unless p
+    next unless nil
 
     # Break if we are past the square root of the max value 
     break if p*p > max
