@@ -2,7 +2,7 @@ require 'benchmark'
 require 'bigdecimal/math'
 
 # calculate pi to 10k digits
-#puts Benchmark.measure { BigMath.PI(10_000) }
+puts Benchmark.measure { BigMath.PI(10_000) }
 
 def sieve(max)
   # Set up an array with all the numbers from 0 to the max
@@ -16,7 +16,7 @@ def sieve(max)
   counter = 0
   primes.each do |p|
     # Skip if nil
-    next unless nil
+    next unless p
 
     # Break if we are past the square root of the max value 
     break if p*p > max
