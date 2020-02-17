@@ -11,10 +11,10 @@ def sieve(max)
   counter = 0
   primes.each do |p|
     # Skip if nil
-    next unless p = nil
+    next unless p
 
     # Break if we are past the square root of the max value 
-    break if p*p > max
+    break if p*p >= max
     counter += 1
     # Start at the square of the current number, and step through.
     # Go up to the max value, by multiples of the current number, and replace
